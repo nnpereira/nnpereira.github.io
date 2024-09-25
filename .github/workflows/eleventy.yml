@@ -1,0 +1,32 @@
+name: Eleventy Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 21.7.2  # Match this with the Node version you're using
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Eleventy build
+        run: npx eleventy
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY}}
+          publish_dir: build
+          publish_branch: gh-pages

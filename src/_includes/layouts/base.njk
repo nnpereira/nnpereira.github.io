@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    {# This is the base template for the site–other templates extend this one #}
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Niha Pereira's personal website" />
+    <link rel="stylesheet" href="{{ '/' | url }}/styles.css">
+
+    {% seo "" %}
+  </head>
+  <body>
+  <main >
+
+    {# Page or post content will appear here #}
+  
+    {{ content | safe }}
+    <footer class="footer">
+        <div class="links">
+          <a href="/">Home</a>
+          <!-- <span class="divider">|</span>
+          <a href="/posts">Articles</a> -->
+          <!-- <span class="divider">|</span>
+          <a href="/about">About</a> -->
+        </div>
+        <div class="links">
+        <!-- <a href="https://github.com/nnpereira" color="555e63"target="_blank" rel="noopener noreferrer"><i class="fa fa-github" style="font-size:20px;"></i></a> -->
+        <!-- <span class="divider">|</span> -->
+        <a href="https://www.linkedin.com/in/niha-pereira/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" style="font-size:20px;"></i></a>
+      </div>
+        </div>
+      </footer>
+
+
+    
+  </main>
+   
+  </body>
+</html>
