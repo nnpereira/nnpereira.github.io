@@ -81,7 +81,7 @@ eleventyConfig.addCollection("tagList", collection => {
     dir: {
       input: "src",
       includes: "_includes",
-      output: "build"
+      output: "_site"
     }
   };
 };
