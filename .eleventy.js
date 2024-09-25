@@ -78,7 +78,7 @@ eleventyConfig.addCollection("tagList", collection => {
 });
 
   return {
-    pathPrefix: "/nnpereira.github.io/",
+    // pathPrefix: "/nnpereira.github.io/",
     dir: {
       input: "src",
       includes: "_includes",
