@@ -97,11 +97,15 @@
     background-color: var(--color-bg);
   }
   .wrapper {
-    min-height: var(--wrapper-height);
-    place-items: center;
-    margin: 3rem 2rem 0;
-    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
   }
+  
   .content {
     display: flex;
     flex-direction: column;
@@ -179,12 +183,12 @@
   text-decoration: none;
  }
 
-  .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 32px;
+.title, .service-list, .connect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px;
 }
 
 .service-list {
@@ -192,22 +196,52 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0;
+  margin: 0;
 }
+
+.service-list ul {
+  list-style-type: none;  /* Remove bullet points */
+  padding: 0;             /* Remove default padding */
+  margin: 0;              /* Remove default margin */
+}
+
+.service-list ul.no-bullet > li {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;  /* Add space between items */
+}
+
+.service-list ul.no-bullet > li > ul {
+  font-size: 1rem;
+  margin-top: 0.5rem;     /* Space between nested ul and li */
+}
+
+.service-list ul.no-bullet > li > ul {
+  padding-left: 0;        /* Remove padding on nested ul */
+  text-align: center;      /* Center-align nested list text */
+}
+
+
 
 .connect {
-  font-size: 1rem;
-  align-items: center;
-  text-align: center;
-  padding: 32px;
-
+    font-size: 1rem;
+    margin-top: 40px;
+    padding: 0 20px;
 }
+
+.highlight {
+  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=78d5e3);
+  padding: 0 5px;
+}
+
 .intro-text {
-    font-size: 3.0rem; /* Instead of fixed 56px */
-    margin-bottom: 10px;
+  font-size: 3rem; /* Adjusted for responsiveness */
+  margin-bottom: 10px;
 }
 
 .intro-description {
-    font-size: 1.5rem; 
+  font-size: 1.5rem;
+  margin-bottom: 20px;
 }
   /* Layout: Home */
   .home {
@@ -243,3 +277,25 @@ ul.no-bullet > li {
 ul.no-bullet > li > ul {
   font-size:16px;
  }
+
+ @media (max-width: 600px) {
+  .intro-text {
+      font-size: 1.8rem;
+  }
+
+  .intro-description {
+      font-size: 1.2rem;
+  }
+
+  h5 {
+      font-size: 1rem;
+  }
+
+  .no-bullet li {
+      font-size: 0.9rem;
+  }
+
+  .connect a {
+      font-size: 0.9rem;
+  }
+}
