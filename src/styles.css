@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
-                
 
 :root {
     --color-bg: rgb(246, 244, 237);
@@ -10,18 +9,18 @@
     --image-max-width: 320px;
     --font-family: 'Satoshi', sans-serif;
     --font-family-header: 'Satoshi', sans-serif;
-  }
-  
-  * {
+}
+
+* {
     box-sizing: border-box;
-  }
-  [hidden] {
+}
+
+[hidden] {
     display: none !important;
-  }
-  
-  
-  
-  .btn--remix {
+}
+
+/* Buttons */
+.btn--remix {
     font-family: Satoshi;
     padding: 0.75rem 1rem;
     font-size: 1.1rem;
@@ -31,197 +30,184 @@
     align-items: center;
     cursor: pointer;
     background: #FFFFFF;
-    border: 1px solid  #393E41;
-    box-sizing: border-box;
+    border: 1px solid #393E41;
     border-radius: 4px;
-    /* text-decoration: none; */
     color: #393E41;
     white-space: nowrap;
     margin-left: auto;
-  }
-  .btn--remix img {
+}
+
+.btn--remix img {
     margin-right: 0.5rem;
-  }
+}
 
-  
-  /* Navigation grid */
-  .header {
-    width:  100%;
+/* Navigation */
+.header {
+    width: 100%;
     text-align: center;
-    color:  var(--color-primary)
-    /* margin-bottom: 108px; */
-  }
+    color: var(--color-primary);
+}
 
-  .footer {
+/* Footer */
+.footer {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: var(--color-bg);
     display: flex;
     justify-content: space-between;
-    margin: 1rem auto 0;
-    padding: 1rem 0 0.75rem 0;
-    width: 100%;
-    flex-wrap: wrap;
     border-top: 1px solid var(--color-primary);
-  }
-  
-  .footer a:not(.btn--remix):link,
-  a:not(.btn--remix):visited {
-    font-family: 'Satoshi', sans-serif;
-    font-style: normal;
+}
+
+.footer a:not(.btn--remix):link,
+.footer a:not(.btn--remix):visited {
+    font-family: var(--font-family);
     font-weight: normal;
     font-size: 1.1rem;
-    color:  var(--color-text-main);
+    color: var(--color-text-main);
     text-decoration: none;
-    border-style: none;
-  }
+}
 
-  .footer a:hover {
+.footer a:hover {
     color: #78d5e3;
-    /* background: var(--color-primary); */
-  }
-  
-  .footer .links {
-    padding: 0.5rem 1rem 1.5rem;
-    white-space: nowrap;
-  }
-  
-  .footer .links {
-    padding: 0.5rem 1rem 1.5rem;
-    white-space: nowrap;
-  }
-  .divider {
-    padding: 0 1rem;
-  }
+}
 
-  
-  body {
+.footer .links {
+    padding: 0.5rem 1rem 1.5rem;
+    white-space: nowrap;
+}
+
+.divider {
+    padding: 0 1rem;
+}
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
     font-family: var(--font-family);
     background-color: var(--color-bg);
-  }
-  .wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      padding: 20px;
-      box-sizing: border-box;
-  }
-  
-  .content {
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content {
     display: flex;
     flex-direction: column;
     max-width: 900px;
     margin: 0 auto;
-  }
-  
-  p {
+    min-height: 100vh; /* Ensure content takes full height */
+}
+
+p {
     margin: 0 0 1rem 0;
     line-height: 1.5 !important;
     font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin: 2rem 0 .8rem;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    margin: 2rem 0 0.8rem;
     font-family: var(--font-family-header);
     font-weight: 600;
     line-height: 1.1;
     color: var(--color-text-main);
-  }
-  h1 {
-    
-    margin-top: 1rem;
-    margin-bottom: 1.75rem;
+}
+
+h1 {
+    margin: 1rem 0 1.75rem;
     font-size: 5rem;
     display: inline-flex;
-  }
-  h2 {
+}
+
+h2 {
     font-size: 4rem;
-  }
-  h3 {
+}
+
+h3 {
     font-size: 2rem;
-  }
-  h4 {
+}
+
+h4 {
     font-size: 1.5rem;
-  }
-  h5 {
+}
+
+h5 {
     font-size: 1.25rem;
-  }
-  small,
-  .text_small {
+}
+
+small,
+.text_small {
     font-size: 0.8rem;
-  }
-  ul > li,
-  ol > li {
+}
+
+/* Lists */
+ul > li,
+ol > li {
     margin-bottom: 0.75rem;
     line-height: 1.5;
     font-size: 1rem;
-  }
-  ul {
+}
+
+ul {
     padding: 0 0 0 18px;
     margin: 0;
-    
-  }
-  ul.no-bullet {
-    list-style-type: none !important;
-  }
-  
-  /* Link styles */
-  /* a:not(.btn--remix):link,
-  a:not(.btn--remix):visited {
-    text-decoration: none;
-    border-bottom: 4px solid var(--color-primary);
-    color: var(--foreground);
-    transition: background 0.2s linear;
-  }
-  a:hover {
-    background: var(--color-primary);
-  } */
-  
- a {
-  text-decoration: none;
- }
+}
 
-.title, .service-list, .connect {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 32px;
+ul.no-bullet {
+    list-style-type: none !important;
+}
+
+/* Link Styles */
+a {
+    text-decoration: none;
+}
+
+/* Title and Service Styles */
+.title,
+.service-list,
+.connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 32px;
 }
 
 .service-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 0;
-  margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .service-list ul {
-  list-style-type: none;  /* Remove bullet points */
-  padding: 0;             /* Remove default padding */
-  margin: 0;              /* Remove default margin */
+    list-style-type: none;  /* Remove bullet points */
+    padding: 0;             /* Remove default padding */
+    margin: 0;              /* Remove default margin */
 }
 
 .service-list ul.no-bullet > li {
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;  /* Add space between items */
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;  /* Add space between items */
 }
 
 .service-list ul.no-bullet > li > ul {
-  font-size: 1rem;
-  margin-top: 0.5rem;     /* Space between nested ul and li */
+    font-size: 1rem;
+    margin-top: 0.5rem;     /* Space between nested ul and li */
+    padding-left: 0;        /* Remove padding on nested ul */
+    text-align: center;      /* Center-align nested list text */
 }
-
-.service-list ul.no-bullet > li > ul {
-  padding-left: 0;        /* Remove padding on nested ul */
-  text-align: center;      /* Center-align nested list text */
-}
-
-
 
 .connect {
     font-size: 1rem;
@@ -229,73 +215,89 @@
     padding: 0 20px;
 }
 
+/* Highlight Style */
 .highlight {
-  background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=78d5e3);
-  padding: 0 5px;
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=78d5e3);
+    padding: 0 5px;
 }
 
+/* Intro Text Styles */
 .intro-text {
-  font-size: 3rem; /* Adjusted for responsiveness */
-  margin-bottom: 10px;
+    font-size: 3rem; /* Adjusted for responsiveness */
+    margin-bottom: 10px;
 }
 
 .intro-description {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
-  /* Layout: Home */
-  .home {
+
+/* Layout: Home */
+.home {
     justify-content: center;
-  }
-  .illo-container {
+}
+
+.illo-container {
     display: flex;
     justify-content: flex-end;
-  }
+}
 
-  /* Post */
-  .post {
-    place-items: normal;
-  }
-  .postTitle {
-    font-size: 2rem;
+/* Post Styles */
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Left-aligns content in the posts page */
+    max-width: 900px; /* Control width */
+    margin: 2rem auto; /* Centered but with left alignment */
+    padding: 0 1rem; /* Optional: add padding for spacing */
+}
+
+.postTitle {
     color: var(--color-text-main);
     line-height: 1.1;
     margin-bottom: 2rem;
-  }
-  .controls {
+    font-size: 2rem;
+}
+
+.controls {
     margin: 3rem 0 2rem;
-  }
-
-  .highlight {
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=78d5e3);
 }
 
-ul.no-bullet > li {
- font-size:20px;
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .intro-text {
+        font-size: 1.8rem;
+    }
+
+    .intro-description {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .no-bullet li {
+        font-size: 0.9rem;
+    }
+
+    .connect a {
+        font-size: 0.9rem;
+    }
 }
 
-ul.no-bullet > li > ul {
-  font-size:16px;
- }
+/* Footer Copyright */
+.footer-copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--color-text-main);
+}
 
- @media (max-width: 600px) {
-  .intro-text {
-      font-size: 1.8rem;
-  }
+.footer-copyright a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
 
-  .intro-description {
-      font-size: 1.2rem;
-  }
-
-  h5 {
-      font-size: 1rem;
-  }
-
-  .no-bullet li {
-      font-size: 0.9rem;
-  }
-
-  .connect a {
-      font-size: 0.9rem;
-  }
+.footer-copyright a:hover {
+    text-decoration: underline;
 }

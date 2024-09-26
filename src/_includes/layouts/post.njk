@@ -3,16 +3,14 @@ layout: layouts/base.njk
 templateClass: tmpl-home
 ---
 
-{# This is the template for individual blog posts–it builds the front matter properties into the page #}
-
-
 <div class="wrapper post">
-  <div>
-    {# The post front matter includes the title property #}
+  <div class="content">
     <div>
-      <h1 class='postTitle'>{{title}}</h1>
-          {% if not hideTagsList %}
-    </br>
+    <h1 class="postTitle">{{ title }}</h1>
+    
+    {# If tags are present and not hidden, display them #}
+    {% if not hideTagsList %}
+      <!-- <div class="tags">
         <b>Tags: </b>
         {% for tag in tags %}
           {% if tag != 'post' %}
@@ -20,27 +18,28 @@ templateClass: tmpl-home
             {%- if not loop.last %}, {% endif %}
           {% endif %}
         {% endfor %}
-      {% endif %}
       </div>
-
-    {# ADD P ELEMENT FROM TODO ON THE NEXT LINE #}
-    
-    {# Content from the body of the post markdown appears here #}
-    {{ content | safe }}
-    <div class="controls">
-    {# The previous and next post data is added in .eleventy.js #}
-    <!-- {% if prevPost.url %}
-      <p>
-        <strong>Previous post</strong>: 
-        <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
-      </p>
     {% endif %}
-    {% if nextPost.url %}
-      <p>
-        <strong>Next post</strong>: 
-        <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
-      </p>
-    {% endif %} -->
+  </div> -->
+    {# Post content #}
+    <div class="post-content">
+      {{ content | safe }}
     </div>
+
+    {# Controls for navigation between posts (can uncomment if needed) #}
+    <!-- 
+    <div class="controls">
+      {% if prevPost.url %}
+        <p><strong>Previous post</strong>: 
+          <a class="previous" href="{{ prevPost.url }}">{{ prevPost.data.title }}</a>
+        </p>
+      {% endif %}
+      {% if nextPost.url %}
+        <p><strong>Next post</strong>: 
+          <a class="next" href="{{ nextPost.url }}">{{ nextPost.data.title }}</a>
+        </p>
+      {% endif %}
+    </div> 
+    -->
   </div>
 </div>
