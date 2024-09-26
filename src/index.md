@@ -8,7 +8,7 @@ layout: layouts/home.njk
     <div class="intro-text">analyst &#x2022; designer &#x2022; writer<div>
     <!-- <div class="intro-description">I help growing teams transform data  <span class="highlight"> chaos </span> into <span style="text-decoration: underline  #78d5e3 6px; text-decoration-skip-ink: none;">clarity</span>.
     </div>  -->
-    <div class="intro-description">Hi, I'm Niha. I help <span style="highlight" > growing teams </span>  transform data chaos into clarity</div>
+    <div class="intro-description">Hi, I'm Niha. I help <span class="highlight"> growing teams </span>  transform data chaos into clarity</div>
 </div>
 
 <div class="service-list">
