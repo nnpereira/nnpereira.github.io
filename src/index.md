@@ -35,4 +35,4 @@ layout: layouts/home.njk
 <h4>Need help with a project?</h4>
 Connect with me on <a href="https://www.linkedin.com/in/niha-pereira/" target="_blank" rel="noopener noreferrer">Linkedin </a> if you'd like to learn more
 </div>
-</div>
+</div> 
