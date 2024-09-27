@@ -1,7 +1,6 @@
 ---
 layout: layouts/home.njk
 ---
-<div class="wrapper">
 <div class="title">
     <div class="intro-text">analyst &#x2022; designer &#x2022; writer<div>
     <div class="intro-description">Hi, I'm Niha. I help <span class="highlight"> growing teams </span>  transform data chaos into clarity</div>
