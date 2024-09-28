@@ -11,7 +11,7 @@ layout: layouts/home.njk
 <div class="service-list">
 <h5>SERVICES</h5>
 <ul class="no-bullet">
- <li><span class="highlight">Translate disorganized data into a strategic resource></span>
+ <li><span class="highlight">Translate disorganized data into a strategic resource</span>
     <ul>
      Escape spreadsheet hell and start using your data to grow your business.
     </ul>
