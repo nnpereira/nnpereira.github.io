@@ -1,10 +1,37 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
 
+/* TotoroLight:
+- '#85898A'
+- '#959492'
+- '#AC9D96'
+- '#A8A6A9'
+- '#A1B1C8'
+- '#D6C0A9'
+- '#DCD3C4'
+TotoroMedium:
+- '#0A1215'
+- '#2D2A25'
+- '#583B2B'
+- '#534C53'
+- '#446590'
+- '#AD8152'
+- '#BBA78C'
+TotoroDark:
+- '#05090A'
+- '#151412'
+- '#2C1D16'
+- '#282629'
+- '#213148'
+- '#564029'
+- '#5C5344' */
+
+
 :root {
     --color-bg: rgb(246, 244, 237);
-    --color-text-main: #393E41;
-    --color-primary: #555e63;
+    --color-text-main: #2D2A25;
+    --color-primary: #446590;
+    --color-accent: #A1B1C8;
     --wrapper-height: 85vh;
     --image-max-width: 320px;
     --font-family: 'Satoshi', sans-serif;
@@ -19,27 +46,6 @@
     display: none !important;
 }
 
-/* Buttons */
-.btn--remix {
-    font-family: Satoshi;
-    padding: 0.75rem 1rem;
-    font-size: 1.1rem;
-    line-height: 1rem;
-    font-weight: 500;
-    height: 2.75rem;
-    align-items: center;
-    cursor: pointer;
-    background: #FFFFFF;
-    border: 1px solid #393E41;
-    border-radius: 4px;
-    color: #393E41;
-    white-space: nowrap;
-    margin-left: auto;
-}
-
-.btn--remix img {
-    margin-right: 0.5rem;
-}
 
 /* Navigation */
 .header {
@@ -54,7 +60,7 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem 0;
-    background-color: var(--color-bg);
+    /* background-color: var(--color-bg); */
     display: flex;
     justify-content: space-between;
     border-top: 1px solid var(--color-primary);
@@ -67,10 +73,6 @@
     font-size: 1.1rem;
     color: var(--color-text-main);
     text-decoration: none;
-}
-
-.footer a:hover {
-    color: #78d5e3;
 }
 
 .footer .links {
@@ -92,6 +94,7 @@ html, body {
 
 body {
     font-family: var(--font-family);
+    color: var(--color-text-main);
     background-color: var(--color-bg);
 }
 
@@ -217,10 +220,9 @@ a {
 
 /* Highlight Style */
 .highlight {
-    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=78d5e3);
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=a1b1c8);
     padding: 0 5px;
 }
-
 /* Intro Text Styles */
 .intro-text {
     font-size: 3rem; /* Adjusted for responsiveness */
@@ -301,3 +303,12 @@ a {
 .footer-copyright a:hover {
     text-decoration: underline;
 }
+
+.dot {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(#e5e7eb 2px, transparent 2px);
+    background-size: 16px 16px;
+  }
