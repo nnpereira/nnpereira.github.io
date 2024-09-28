@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
 
   // Ensure correct passthrough for CSS and other assets
   eleventyConfig.addPassthroughCopy("src/styles.css");
+  eleventyConfig.addPassthroughCopy("assets/");
 
   const seo = require("./src/seo.json");
   eleventyConfig.addPlugin(pluginSEO, seo);

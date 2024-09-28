@@ -4,7 +4,9 @@ layout: layouts/home.njk
 <div class="title">
     <div class="intro-text">analyst &#x2022; designer &#x2022; writer<div>
     <div class="intro-description">Hi, I'm Niha. I help <span class="highlight"> growing teams </span>  transform data chaos into clarity</div>
+    <img src="../assets/029.svg" width=40% alt="SVG Icon" />
 </div>
+
 
 <div class="service-list">
 <h5>SERVICES</h5>
@@ -28,6 +30,6 @@ layout: layouts/home.njk
 </div>
 <div class="connect">
 <h4>Need help with a project?</h4>
-<div>Connect with me on <a href="https://www.linkedin.com/in/niha-pereira/" target="_blank" rel="noopener noreferrer">Linkedin </a> if you'd like to learn more </div>
+<div>Connect with me on <a href="https://www.linkedin.com/in/niha-pereira/" target="_blank" rel="noopener noreferrer">Linkedin </a> if you'd like to learn more.</div>
 </div>
 </div> 
