@@ -5,7 +5,7 @@
   <link href="rss.xml" rel="self" />
   <link href="nnpereira.github.io" />
   <updated>
-    2025-01-23T19:36:02Z
+    2025-01-23T19:38:20Z
   </updated>
   <id>nnpereira.github.io</id>
   <author>
@@ -14,7 +14,7 @@
   <entry>
     <title>Sample article</title>
     <link href="/sample-article/" />
-    <updated>2025-01-23T19:36:02Z</updated>
+    <updated>2025-01-23T19:38:20Z</updated>
     <id>/sample-article/</id>
     <content xml:lang="" type="html">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas placerat sapien eget facilisis. Vestibulum nisi diam, sagittis quis commodo eu, rhoncus et velit. Etiam et tellus interdum, varius ligula id, consectetur magna. Maecenas non orci nec elit viverra porta. Mauris condimentum arcu id orci tristique porttitor. Proin tincidunt ornare lacinia. Nunc facilisis, magna ut bibendum tristique, risus ligula pretium justo, vel consequat arcu ipsum ac nulla. Donec blandit rutrum lorem, mollis varius augue scelerisque at. Vivamus eget facilisis quam, id aliquam arcu.</p>
@@ -28,7 +28,7 @@
   <entry>
     <title>Markdown test page</title>
     <link href="/markdown-test/" />
-    <updated>2025-01-23T19:36:02Z</updated>
+    <updated>2025-01-23T19:38:20Z</updated>
     <id>/markdown-test/</id>
     <content xml:lang="" type="html">
       <h2>Overview</h2>
@@ -267,7 +267,7 @@ normal paragraph. For example:</p>
   <entry>
     <title>About me</title>
     <link href="/about/" />
-    <updated>2025-01-23T19:36:02Z</updated>
+    <updated>2025-01-23T19:38:20Z</updated>
     <id>/about/</id>
     <content xml:lang="" type="html">
       <p>Nulite is a simple, elegant, minimalistic stater project for <a href="https://www.11ty.dev/">Eleventy</a> to help you create a simple blog with focus on performance and simplicity.</p>
