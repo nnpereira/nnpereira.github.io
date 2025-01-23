@@ -5,7 +5,7 @@
   <link href="rss.xml" rel="self" />
   <link href="nnpereira.github.io" />
   <updated>
-    2025-01-23T21:36:30Z
+    2025-01-23T22:40:24Z
   </updated>
   <id>nnpereira.github.io</id>
   <author>
@@ -14,7 +14,7 @@
   <entry>
     <title>Sample article</title>
     <link href="/sample-article/" />
-    <updated>2025-01-23T21:36:30Z</updated>
+    <updated>2025-01-23T22:40:24Z</updated>
     <id>/sample-article/</id>
     <content xml:lang="" type="html">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas placerat sapien eget facilisis. Vestibulum nisi diam, sagittis quis commodo eu, rhoncus et velit. Etiam et tellus interdum, varius ligula id, consectetur magna. Maecenas non orci nec elit viverra porta. Mauris condimentum arcu id orci tristique porttitor. Proin tincidunt ornare lacinia. Nunc facilisis, magna ut bibendum tristique, risus ligula pretium justo, vel consequat arcu ipsum ac nulla. Donec blandit rutrum lorem, mollis varius augue scelerisque at. Vivamus eget facilisis quam, id aliquam arcu.</p>
@@ -28,7 +28,7 @@
   <entry>
     <title>About me</title>
     <link href="/about/" />
-    <updated>2025-01-23T21:36:30Z</updated>
+    <updated>2025-01-23T22:40:24Z</updated>
     <id>/about/</id>
     <content xml:lang="" type="html">
       <p>Hi, I'm Niha. I've spent the majority of my career working as a data consultant in the social impact space. I love to learn and hope I can use this space to discuss things related to <a href="/tags/data/">data</a>, <a href="(/tags/llm/)">LLM's</a>, <a href="/tags/ai/">Responsible AI</a>, and more.</p>
