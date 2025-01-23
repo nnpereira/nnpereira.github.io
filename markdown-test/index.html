@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      <title>Markdown test page</title>
+      <meta name="twitter:title" content="Markdown test page">
+      <meta property="og:title" content="Markdown test page">
+     
+
+    
+      <meta name="twitter:description" content="This article is a sample of everything you can create using markdown syntax.">
+      <meta name="description" content="This article is a sample of everything you can create using markdown syntax.">
+      <meta property="og:description" content="This article is a sample of everything you can create using markdown syntax.">
+     
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest"> -->
+
+    <style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+
+    <style>
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+  * {
+    padding: 0;
+    margin: 0;
+    line-height: calc(1em + 0.75rem);
+  }
+  html {
+  /* Light theme colors - warm */
+  --color-background: #FFFCF8;
+  --color-background-shade: #FBF7F1;
+  --color-text: #2D2A25;
+  --color-text-shade: #575650;
+  --color-primary: #446590;
+
+  
+  /* Shadow colors */
+  --shadow-sm: 0 1px 2px rgba(45, 42, 37, 0.05);
+  --shadow-md: 0 4px 6px rgba(45, 42, 37, 0.08);
+
+    --font-family: Satoshi, sans-serif;
+
+    --container-max-size: 75ch;
+    --container-padding-sides: var(--space-4);
+
+    --space-1: 0.35rem;
+    --space-2: 0.5rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-10: 6rem;
+
+    --font-size-xs: clamp(0.8rem, 0.12vw + 0.8rem, 1rem);
+    --font-size-base: clamp(0.9rem, 0.16vw + 0.9rem, 1.25rem);
+    --font-size-lg: clamp(1.2rem, 0.12vw + 1.2rem, 1.6rem);
+    --font-size-xl: clamp(1.6rem, 0.14vw + 1.6rem, 2rem);
+  }
+  [data-theme="dark"] {
+    --color-background: #0F172A;
+  --color-background-shade: #1E293B;
+  --color-text: #E2E8F0;
+  --color-text-shade: #94A3B8;
+  --color-primary: #60A5FA;
+  --color-surface: #1E293B;
+  --color-surface-hover: #334155;
+  --color-border: #334155;
+  --color-border-hover: #475569;
+  --color-accent-subtle: rgba(96, 165, 250, 0.1);
+  --color-accent-hover: rgba(96, 165, 250, 0.15);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+  h2 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-shade);
+    font-weight: normal;
+    margin-bottom: var(--space-2);
+  }
+  h3 {
+
+    font-weight: 200;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: var(--font-size-base);
+  }
+  body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-size: 1rem;
+    font-size: var(--font-size-base);
+    //background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    //background-size: 16px 16px;
+    text-rendering: optimizeLegibility;\
+  }
+  a {
+    color: var(--color-primary);
+  }
+  img,
+  picture {
+    height: auto;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  blockquote {
+    padding: 0 1em;
+    color: var(--color-text-shade);
+    border-left: 0.25em solid var(--color-primary);
+  }
+  button {
+    display: inline;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: var(--font-size-base);
+    padding: 0.5em 1em;
+    font-size: inherit;
+    line-height: 1.15;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: var(--color-text);
+    color: white;
+  }
+  pre {
+    padding: var(--space-4);
+    border-radius: 4px;
+    font-size: var(--font-size-xs);
+    background: var(--color-background-shade);
+    --prism-background: var(--color-background-shade);
+    --prism-font-size: var(--font-size-xs);
+  }
+  code {
+    font-size: var(--font-size-xs);
+    white-space: pre-wrap;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+</style>
+
+  </head>
+  <body>
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
+    <style>
+  .navbar {
+    max-width: var(--container-max-size);
+    padding: var(--space-7) var(--container-padding-sides);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .navbar nav {
+    flex: 1;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  .navbar a:hover {
+    color: var(--color-primary);
+    transition: color 0.2s ease-in-out;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    row-gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .navbar-links > *:nth-child(2) {
+    margin-left: auto;
+  }
+  .link-home {
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+  }
+  @media (max-width: 1250px) {
+    .navbar-links > *:nth-child(1) {
+      width: 100%;
+    }
+    .navbar-links > *:nth-child(2) {
+      margin-left: unset;
+    }
+  }
+</style>
+
+<header class="navbar">
+  <nav>
+    <ul class="navbar-links">
+      <li class="link-home">
+        <a href="/">Niha Pereira</a>
+      </li>
+        <a href="/about">About</a>
+        <a href="/articles">Writing</a>
+    </ul>
+  </nav>
+     <button class="dark-toggler" aria-label="Toggle color mode" title="Toggle color mode" data-theme-toggle>
+  <div class="toggler-icon"></div>
+</button>
+
+<style>
+  .dark-toggler {
+    background: unset;
+  }
+  .dark-toggler:hover {
+    background: unset;
+  }
+  .dark-toggler:hover .toggler-icon {
+    background-color: var(--color-primary);
+  }
+  .toggler-icon {
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-text);
+    transition: background-color 0.2s ease-in-out;
+    -webkit-mask-size: 18px;
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' %3E%3Cpath fill-rule='evenodd' d='M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  [data-theme="dark"] .toggler-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' %3E%3Cpath d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /%3E%3C/svg%3E");
+  }
+</style>
+
+<script>
+  const localStorageTheme = localStorage.getItem("theme");
+  const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const systemSettingTheme = systemSettingDark.matches ? "dark" : "light";
+
+  let currentTheme = localStorageTheme ? localStorageTheme : systemSettingTheme;
+
+  const buttonToggler = document.querySelector("[data-theme-toggle]");
+  const html = document.querySelector("html");
+
+  html.setAttribute("data-theme", currentTheme);
+
+  setTimeout(() => {
+    document.querySelector("body").style.transition =
+      "background-color 1s ease-out, color 1s ease-out";
+  }, 0);
+
+  buttonToggler.addEventListener("click", () => {
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    currentTheme = newTheme;
+  });
+</script>
+
+</header>
+
+    <style>
+      .main-container {
+        margin: 0 auto;
+        max-width: var(--container-max-size);
+        padding: 0 var(--container-padding-sides) var(--space-4);
+      }
+    </style>
+    <main class="main-container" id="skip">
+      
+<header class="post-header">
+  <h1 class="post-title">Markdown test page</h1>
+  
+  <div class="post-time">
+    <time datetime="">
+      Thu, Jan 23, 2025
+    </time>
+  </div>
+  
+</header>
+
+<section class="post-container">
+  <h2>Overview</h2>
+<h3>Philosophy</h3>
+<p>Markdown is intended to be as easy-to-read and easy-to-write as is feasible.</p>
+<p>Readability, however, is emphasized above all else. A Markdown-formatted
+document should be publishable as-is, as plain text, without looking
+like it's been marked up with tags or formatting instructions. While
+Markdown's syntax has been influenced by several existing text-to-HTML
+filters -- including <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>, <a href="http://www.aaronsw.com/2002/atx/">atx</a>, <a href="http://textism.com/tools/textile/">Textile</a>, <a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>,
+<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a>, and <a href="http://ettext.taint.org/doc/">EtText</a> -- the single biggest source of
+inspiration for Markdown's syntax is the format of plain text email.</p>
+<h2>Block Elements</h2>
+<h3>Paragraphs and Line Breaks</h3>
+<p>A paragraph is simply one or more consecutive lines of text, separated
+by one or more blank lines. (A blank line is any line that looks like a
+blank line -- a line containing nothing but spaces or tabs is considered
+blank.) Normal paragraphs should not be indented with spaces or tabs.</p>
+<p>The implication of the &quot;one or more consecutive lines of text&quot; rule is
+that Markdown supports &quot;hard-wrapped&quot; text paragraphs. This differs
+significantly from most other text-to-HTML formatters (including Movable
+Type's &quot;Convert Line Breaks&quot; option) which translate every line break
+character in a paragraph into a <code>&lt;br /&gt;</code> tag.</p>
+<p>When you <em>do</em> want to insert a <code>&lt;br /&gt;</code> break tag using Markdown, you
+end a line with two or more spaces, then type return.</p>
+<h3>Headers</h3>
+<p>Markdown supports two styles of headers, [Setext] [1] and [atx] [2].</p>
+<p>Optionally, you may &quot;close&quot; atx-style headers. This is purely
+cosmetic -- you can use this if you think it looks better. The
+closing hashes don't even need to match the number of hashes
+used to open the header. (The number of opening hashes
+determines the header level.)</p>
+<h3>Blockquotes</h3>
+<p>Markdown uses email-style <code>&gt;</code> characters for blockquoting. If you're
+familiar with quoting passages of text in an email message, then you
+know how to create a blockquote in Markdown. It looks best if you hard
+wrap the text and put a <code>&gt;</code> before every line:</p>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Markdown allows you to be lazy and only put the <code>&gt;</code> before the first
+line of a hard-wrapped paragraph:</p>
+<blockquote>
+<p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
+</blockquote>
+<blockquote>
+<p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
+</blockquote>
+<p>Blockquotes can be nested (i.e. a blockquote-in-a-blockquote) by
+adding additional levels of <code>&gt;</code>:</p>
+<blockquote>
+<p>This is the first level of quoting.</p>
+<blockquote>
+<p>This is nested blockquote.</p>
+</blockquote>
+<p>Back to the first level.</p>
+</blockquote>
+<p>Blockquotes can contain other Markdown elements, including headers, lists,
+and code blocks:</p>
+<blockquote>
+<h2>This is a header.</h2>
+<ol>
+<li>This is the first list item.</li>
+<li>This is the second list item.</li>
+</ol>
+<p>Here's some example code:</p>
+<p>return shell_exec(&quot;echo $input | $markdown_script&quot;);</p>
+</blockquote>
+<p>Any decent text editor should make email-style quoting easy. For
+example, with BBEdit, you can make a selection and choose Increase
+Quote Level from the Text menu.</p>
+<h3>Lists</h3>
+<p>Markdown supports ordered (numbered) and unordered (bulleted) lists.</p>
+<p>Unordered lists use asterisks, pluses, and hyphens -- interchangably
+-- as list markers:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>is equivalent to:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>and:</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Blue</li>
+</ul>
+<p>Ordered lists use numbers followed by periods:</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>It's important to note that the actual numbers you use to mark the
+list have no effect on the HTML output Markdown produces. The HTML
+Markdown produces from the above list is:</p>
+<p>If you instead wrote the list in Markdown like this:</p>
+<ol>
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>or even:</p>
+<ol start="3">
+<li>Bird</li>
+<li>McHale</li>
+<li>Parish</li>
+</ol>
+<p>you'd get the exact same HTML output. The point is, if you want to,
+you can use ordinal numbers in your ordered Markdown lists, so that
+the numbers in your source match the numbers in your published HTML.
+But if you want to be lazy, you don't have to.</p>
+<p>To make lists look nice, you can wrap items with hanging indents:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+<p>But if you want to be lazy, you don't have to:</p>
+<ul>
+<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+<li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+<p>List items may consist of multiple paragraphs. Each subsequent
+paragraph in a list item must be indented by either 4 spaces
+or one tab:</p>
+<ol>
+<li>
+<p>This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.</p>
+<p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.</p>
+</li>
+<li>
+<p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+</li>
+</ol>
+<p>It looks nice if you indent every line of the subsequent
+paragraphs, but here again, Markdown will allow you to be
+lazy:</p>
+<ul>
+<li>
+<p>This is a list item with two paragraphs.</p>
+<p>This is the second paragraph in the list item. You're</p>
+<p>only required to indent the first line. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit.</p>
+</li>
+<li>
+<p>Another item in the same list.</p>
+</li>
+</ul>
+<p>To put a blockquote within a list item, the blockquote's <code>&gt;</code>
+delimiters need to be indented:</p>
+<ul>
+<li>
+<p>A list item with a blockquote:</p>
+<blockquote>
+<p>This is a blockquote
+inside a list item.</p>
+</blockquote>
+</li>
+</ul>
+<p>To put a code block within a list item, the code block needs
+to be indented <em>twice</em> -- 8 spaces or two tabs:</p>
+<ul>
+<li>A list item with a code block:</li>
+</ul>
+<pre class="language-html" data-language="html"><code class="language-html" data-language="html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>code</span> <span class="token attr-name">goes</span> <span class="token attr-name">here</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>code</span><span class="token punctuation">></span></span></code></pre>
+<h3>Code Blocks</h3>
+<p>Pre-formatted code blocks are used for writing about programming or
+markup source code. Rather than forming normal paragraphs, the lines
+of a code block are interpreted literally. Markdown wraps a code block
+in both <code>&lt;pre&gt;</code> and <code>&lt;code&gt;</code> tags.</p>
+<p>To produce a code block in Markdown, simply indent every line of the
+block by at least 4 spaces or 1 tab.</p>
+<p>This is a normal paragraph:</p>
+<pre><code>This is a code block.</code></pre>
+<p>Here is an example of Javascript</p>
+<pre class="language-javascript" data-language="Javascript"><code class="language-javascript" data-language="Javascript"><span class="token keyword">function</span> <span class="token function">helloWorld</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Hello World"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>A code block continues until it reaches a line that is not indented
+(or the end of the article).</p>
+<p>Regular Markdown syntax is not processed within code blocks. E.g.,
+asterisks are just literal asterisks within a code block. This means
+it's also easy to use Markdown to write about Markdown's own syntax.</p>
+<pre><code>tell application "Foo"
+    beep
+end tell</code></pre>
+<h2>Span Elements</h2>
+<h3>Links</h3>
+<p>Markdown supports two style of links: <em>inline</em> and <em>reference</em>.</p>
+<p>In both styles, the link text is delimited by [square brackets].</p>
+<p>To create an inline link, use a set of regular parentheses immediately
+after the link text's closing square bracket. Inside the parentheses,
+put the URL where you want the link to point, along with an <em>optional</em>
+title for the link, surrounded in quotes. For example:</p>
+<p>This is <a href="http://example.com/">an example</a> inline link.</p>
+<p><a href="http://example.net/">This link</a> has no title attribute.</p>
+<h3>Emphasis</h3>
+<p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of
+emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an
+HTML <code>&lt;em&gt;</code> tag; double <code>*</code>'s or <code>_</code>'s will be wrapped with an HTML
+<code>&lt;strong&gt;</code> tag. E.g., this input:</p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<h3>Code</h3>
+<p>To indicate a span of code, wrap it with backtick quotes (<code>`</code>).
+Unlike a pre-formatted code block, a code span indicates code within a
+normal paragraph. For example:</p>
+<p>Use the <code>printf()</code> function.</p>
+
+</section>
+
+ 
+<section class="related">
+  <h2 class="related-title">You might also enjoy</h2>
+  <ul class="related-posts">
+    
+    <li>
+      <a class="related-article" href="/sample-article/">
+        <h3 class="related-article-title">Sample article</h3>
+        <p class="related-article-description">
+          Whenever I buy things I try to prioritize cost per use. Sometimes I
+          consider other priorities such as cost per smile, cost per thrill,
+          cost per externality, and cost per lesson. Cost per use Cost per use
+          is a heuristic that helps me make decisions about most non-perishable
+          purchases such... Keep&nbsp;reading&nbsp;→
+        </p>
+      </a>
+    </li>
+    
+    <li>
+      <a class="related-article" href="/about/">
+        <h3 class="related-article-title">About me</h3>
+        <p class="related-article-description">
+          Whenever I buy things I try to prioritize cost per use. Sometimes I
+          consider other priorities such as cost per smile, cost per thrill,
+          cost per externality, and cost per lesson. Cost per use Cost per use
+          is a heuristic that helps me make decisions about most non-perishable
+          purchases such... Keep&nbsp;reading&nbsp;→
+        </p>
+      </a>
+    </li>
+    
+  </ul>
+</section>
+ <style>
+  :root {
+    --prism-scheme: light;
+
+    /* Colors */
+    --prism-foreground: #6e6e6e;
+    --prism-background: #f4f4f4;
+
+    /* Tokens */
+    --prism-comment: #a8a8a8;
+    --prism-string: #555555;
+    --prism-literal: #333333;
+    --prism-keyword: #000000;
+    --prism-function: #4f4f4f;
+    --prism-deleted: #333333;
+    --prism-class: #333333;
+    --prism-builtin: #757575;
+    --prism-property: #333333;
+    --prism-namespace: #4f4f4f;
+    --prism-punctuation: #ababab;
+    --prism-decorator: var(--prism-class);
+    --prism-operator: var(--prism-punctuation);
+    --prism-number: var(--prism-literal);
+    --prism-boolean: var(--prism-literal);
+    --prism-variable: var(--prism-literal);
+    --prism-constant: var(--prism-literal);
+    --prism-symbol: var(--prism-literal);
+    --prism-interpolation: var(--prism-literal);
+    --prism-selector: var(--prism-keyword);
+    --prism-keyword-control: var(--prism-keyword);
+    --prism-regex: var(--prism-string);
+    --prism-json-property: var(--prism-property);
+    --prism-inline-background: var(--prism-background);
+
+    /* Token Styles */
+    --prism-comment-style: italic;
+    --prism-url-decoration: underline;
+
+    /* Extension */
+    --prism-line-number: #a5a5a5;
+    --prism-line-number-gutter: #333333;
+    --prism-line-highlight-background: #eeeeee;
+    --prism-selection-background: #dddddd;
+    --prism-marker-color: var(--prism-foreground);
+    --prism-marker-opacity: 0.4;
+    --prism-marker-font-size: 0.8em;
+
+    /* Font */
+    --prism-font-size: 1em;
+    --prism-line-height: 1.5em;
+    --prism-font-family: monospace;
+    --prism-inline-font-size: var(--prism-font-size);
+    --prism-block-font-size: var(--prism-font-size);
+
+    /* Sizing */
+    --prism-tab-size: 2;
+
+    --prism-block-padding-x: 1em;
+    --prism-block-padding-y: 1em;
+    --prism-block-margin-x: 0;
+    --prism-block-margin-y: 0.5em;
+    --prism-block-radius: 0.3em;
+    --prism-inline-padding-x: 0.3em;
+    --prism-inline-padding-y: 0.1em;
+    --prism-inline-radius: 0.3em;
+  }
+
+  div[class*="language-"],
+  pre[class*="language-"],
+  code[class*="language-"] {
+    font-size: var(--prism-font-size);
+    font-family: var(--prism-font-family);
+    direction: ltr;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    line-height: var(--prism-line-height);
+    -moz-tab-size: var(--prism-tab-size);
+    -o-tab-size: var(--prism-tab-size);
+    tab-size: var(--prism-tab-size);
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    color: var(--prism-foreground) !important;
+  }
+
+  /* Code blocks */
+  div[class*="language-"],
+  pre[class*="language-"] {
+    font-size: var(--prism-block-font-size);
+    padding: var(--prism-block-padding-y) var(--prism-block-padding-x);
+    margin: var(--prism-block-margin-y) var(--prism-block-margin-x);
+    border-radius: var(--prism-block-radius);
+    overflow: auto;
+    background: var(--prism-background);
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    font-size: var(--prism-inline-font-size);
+    padding: var(--prism-inline-padding-y) var(--prism-inline-padding-x);
+    border-radius: var(--prism-inline-radius);
+    background: var(--prism-inline-background);
+  }
+
+  /* Selection */
+  pre[class*="language-"]::-moz-selection,
+  pre[class*="language-"] ::-moz-selection,
+  code[class*="language-"]::-moz-selection,
+  code[class*="language-"] ::-moz-selection {
+    background: var(--prism-selection-background);
+  }
+
+  pre[class*="language-"]::selection,
+  pre[class*="language-"] ::selection,
+  code[class*="language-"]::selection,
+  code[class*="language-"] ::selection {
+    background: var(--prism-selection-background);
+  }
+
+  /* Tokens */
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: var(--prism-comment);
+    font-style: var(--prism-comment-style);
+  }
+
+  .token.namespace {
+    color: var(--prism-namespace);
+  }
+
+  .token.interpolation {
+    color: var(--prism-interpolation);
+  }
+
+  .token.string {
+    color: var(--prism-string);
+  }
+
+  .token.punctuation {
+    color: var(--prism-punctuation);
+  }
+
+  .token.operator {
+    color: var(--prism-operator);
+  }
+
+  .token.keyword.module,
+  .token.keyword.control-flow {
+    color: var(--prism-keyword-control);
+  }
+
+  .token.url,
+  .token.symbol,
+  .token.inserted {
+    color: var(--prism-symbol);
+  }
+
+  .token.constant {
+    color: var(--prism-constant);
+  }
+
+  .token.string.url {
+    text-decoration: var(--prism-url-decoration);
+  }
+
+  .token.boolean,
+  .language-json .token.boolean {
+    color: var(--prism-boolean);
+  }
+
+  .token.number,
+  .language-json .token.number {
+    color: var(--prism-number);
+  }
+
+  .token.variable {
+    color: var(--prism-variable);
+  }
+
+  .token.keyword {
+    color: var(--prism-keyword);
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.selector {
+    color: var(--prism-selector);
+  }
+
+  .token.function {
+    color: var(--prism-function);
+  }
+
+  .token.deleted {
+    color: var(--prism-deleted);
+  }
+
+  .token.important,
+  .token.bold {
+    font-weight: bold;
+  }
+
+  .token.italic {
+    font-style: italic;
+  }
+
+  .token.class-name {
+    color: var(--prism-class);
+  }
+
+  .token.tag,
+  .token.builtin {
+    color: var(--prism-builtin);
+  }
+
+  .token.attr-name,
+  .token.property,
+  .token.entity {
+    color: var(--prism-property);
+  }
+
+  .language-json .token.property {
+    color: var(--prism-json-property);
+  }
+
+  .token.regex {
+    color: var(--prism-regex);
+  }
+
+  .token.decorator,
+  .token.annotation {
+    color: var(--prism-decorator);
+  }
+
+  /* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+  .line-numbers .line-numbers-rows {
+    border-right-color: var(--prism-line-number);
+  }
+
+  .line-numbers-rows > span:before {
+    color: var(--prism-line-number-gutter);
+  }
+
+  /* overrides color-values for the Line Highlight plugin
+  * http://prismjs.com/plugins/line-highlight/
+  */
+  .line-highlight {
+    background: var(--prism-line-highlight-background);
+  }
+</style>
+
+
+<style>
+  .post-header {
+    margin-bottom: var(--space-5);
+  }
+  .post-title {
+    font-weight: normal;
+  }
+  .post-time {
+    color: var(--color-text-shade);
+    font-size: var(--font-size-xs);
+  }
+  .post-container {
+    padding-bottom: var(--space-8);
+    border-bottom: 1px solid var(--color-text-shade);
+  }
+  .post-container h2 {
+    margin-top: var(--space-7);
+  }
+  .post-container h3 {
+    margin-top: var(--space-6);
+  }
+  .post-container blockquote {
+    margin: var(--space-5) 0;
+  }
+  .post-container > * + * {
+    margin-top: var(--space-3);
+  }
+  .post-container > *:first-child {
+    margin-top: 0;
+  }
+  .post-container blockquote > * + * {
+    margin-top: var(--space-3);
+  }
+  .post-container ul,
+  .post-container ol {
+    padding-left: var(--space-6);
+  }
+  .post-container h2 + *,
+  .post-container h3 + *,
+  .post-container h4 + *,
+  .post-container h5 + * {
+    margin-top: var(--space-2);
+  }
+  .related {
+    margin-top: var(--space-8);
+  }
+  .related-posts {
+    list-style: none;
+  }
+  .related-article + .related-article {
+    margin-top: var(--space-4);
+  }
+  .related-article {
+    padding: var(--space-2) 0;
+    color: var(--color-text);
+    text-decoration: unset;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  .related-article-title {
+    transition: color 0.2s ease-in-out;
+  }
+  .related-article:hover .related-article-title {
+    color: var(--color-primary);
+  }
+  .related-article-description {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-shade);
+  }
+  :root {
+    --prism-foreground: #393a34;
+    --prism-background: transparent;
+
+    --prism-comment: #758575;
+    --prism-namespace: #444444;
+    --prism-string: #bc8671;
+    --prism-punctuation: #80817d;
+    --prism-literal: #36acaa;
+    --prism-keyword: #248459;
+    --prism-function: #849145;
+    --prism-deleted: #9a050f;
+    --prism-class: #2b91af;
+    --prism-builtin: #800000;
+    --prism-property: #ce9178;
+    --prism-regex: #ad502b;
+  }
+
+  [data-theme="dark"] {
+    --prism-foreground: #d4d4d4;
+
+    --prism-namespace: #aaaaaa;
+    --prism-comment: #758575;
+    --prism-namespace: #444444;
+    --prism-string: #ce9178;
+    --prism-punctuation: #d4d4d4;
+    --prism-literal: #36acaa;
+    --prism-keyword: #38a776;
+    --prism-function: #dcdcaa;
+    --prism-deleted: #9a050f;
+    --prism-class: #4ec9b0;
+    --prism-builtin: #d16969;
+    --prism-property: #ce9178;
+    --prism-regex: #ad502b;
+  }
+</style>
+
+    </main>
+    <style>
+  .footer {
+    max-width: var(--container-max-size);
+    padding: var(--space-7) var(--container-padding-sides);
+    margin: var(--space-6) auto 8rem auto;
+    
+  }
+  .footer a {
+    text-decoration: none;
+    color: unset;
+  }
+  .footer a:hover {
+    color: var(--color-primary);
+    transition: color 0.2s ease-in-out;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    row-gap: var(--space-4);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+    
+  }
+  .link-home {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+  }
+</style>
+
+<footer class="footer">
+  <nav>
+    <ul class="footer-links">
+      <li>
+        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/nnpereira" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+  </body>
+</html>

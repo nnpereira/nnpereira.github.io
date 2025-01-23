@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+      <title>Niha Pereira</title>
+      <meta name="twitter:title" content="">
+      <meta property="og:title" content="Niha Pereira">
+     
+
+    
+      <meta name="twitter:description" content="A personal website">
+      <meta name="description" content="A personal website">
+      <meta property="og:description" content="A personal website">
+     
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest"> -->
+
+    <style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+</style>
+
+    <style>
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135005');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+  * {
+    padding: 0;
+    margin: 0;
+    line-height: calc(1em + 0.75rem);
+  }
+  html {
+  /* Light theme colors - warm */
+  --color-background: #FFFCF8;
+  --color-background-shade: #FBF7F1;
+  --color-text: #2D2A25;
+  --color-text-shade: #575650;
+  --color-primary: #446590;
+
+  
+  /* Shadow colors */
+  --shadow-sm: 0 1px 2px rgba(45, 42, 37, 0.05);
+  --shadow-md: 0 4px 6px rgba(45, 42, 37, 0.08);
+
+    --font-family: Satoshi, sans-serif;
+
+    --container-max-size: 75ch;
+    --container-padding-sides: var(--space-4);
+
+    --space-1: 0.35rem;
+    --space-2: 0.5rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 2rem;
+    --space-6: 2.5rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+    --space-9: 5rem;
+    --space-10: 6rem;
+
+    --font-size-xs: clamp(0.8rem, 0.12vw + 0.8rem, 1rem);
+    --font-size-base: clamp(0.9rem, 0.16vw + 0.9rem, 1.25rem);
+    --font-size-lg: clamp(1.2rem, 0.12vw + 1.2rem, 1.6rem);
+    --font-size-xl: clamp(1.6rem, 0.14vw + 1.6rem, 2rem);
+  }
+  [data-theme="dark"] {
+    --color-background: #0F172A;
+  --color-background-shade: #1E293B;
+  --color-text: #E2E8F0;
+  --color-text-shade: #94A3B8;
+  --color-primary: #60A5FA;
+  --color-surface: #1E293B;
+  --color-surface-hover: #334155;
+  --color-border: #334155;
+  --color-border-hover: #475569;
+  --color-accent-subtle: rgba(96, 165, 250, 0.1);
+  --color-accent-hover: rgba(96, 165, 250, 0.15);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  h1 {
+    font-size: var(--font-size-xl);
+  }
+  h2 {
+    font-size: var(--font-size-lg);
+    color: var(--color-text-shade);
+    font-weight: normal;
+    margin-bottom: var(--space-2);
+  }
+  h3 {
+
+    font-weight: 200;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: var(--font-size-base);
+  }
+  body {
+    font-family: var(--font-family);
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-size: 1rem;
+    font-size: var(--font-size-base);
+    //background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    //background-size: 16px 16px;
+    text-rendering: optimizeLegibility;\
+  }
+  a {
+    color: var(--color-primary);
+  }
+  img,
+  picture {
+    height: auto;
+    max-width: 100%;
+    flex-shrink: 0;
+  }
+  blockquote {
+    padding: 0 1em;
+    color: var(--color-text-shade);
+    border-left: 0.25em solid var(--color-primary);
+  }
+  button {
+    display: inline;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: var(--font-size-base);
+    padding: 0.5em 1em;
+    font-size: inherit;
+    line-height: 1.15;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: var(--color-text);
+    color: white;
+  }
+  pre {
+    padding: var(--space-4);
+    border-radius: 4px;
+    font-size: var(--font-size-xs);
+    background: var(--color-background-shade);
+    --prism-background: var(--color-background-shade);
+    --prism-font-size: var(--font-size-xs);
+  }
+  code {
+    font-size: var(--font-size-xs);
+    white-space: pre-wrap;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+</style>
+
+  </head>
+  <body>
+    <a href="#skip" class="visually-hidden">Skip to main content</a>
+    <style>
+  .navbar {
+    max-width: var(--container-max-size);
+    padding: var(--space-7) var(--container-padding-sides);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+  }
+  .navbar nav {
+    flex: 1;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  .navbar a:hover {
+    color: var(--color-primary);
+    transition: color 0.2s ease-in-out;
+  }
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    row-gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+  .navbar-links > *:nth-child(2) {
+    margin-left: auto;
+  }
+  .link-home {
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+  }
+  @media (max-width: 1250px) {
+    .navbar-links > *:nth-child(1) {
+      width: 100%;
+    }
+    .navbar-links > *:nth-child(2) {
+      margin-left: unset;
+    }
+  }
+</style>
+
+<header class="navbar">
+  <nav>
+    <ul class="navbar-links">
+      <li class="link-home">
+        <a href="/">Niha Pereira</a>
+      </li>
+        <a href="/about">About</a>
+        <a href="/articles">Writing</a>
+    </ul>
+  </nav>
+     <button class="dark-toggler" aria-label="Toggle color mode" title="Toggle color mode" data-theme-toggle>
+  <div class="toggler-icon"></div>
+</button>
+
+<style>
+  .dark-toggler {
+    background: unset;
+  }
+  .dark-toggler:hover {
+    background: unset;
+  }
+  .dark-toggler:hover .toggler-icon {
+    background-color: var(--color-primary);
+  }
+  .toggler-icon {
+    width: 18px;
+    height: 18px;
+    background-color: var(--color-text);
+    transition: background-color 0.2s ease-in-out;
+    -webkit-mask-size: 18px;
+    -webkit-mask-position: 50% 50%;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='currentColor' %3E%3Cpath fill-rule='evenodd' d='M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z' clip-rule='evenodd' /%3E%3C/svg%3E");
+  }
+  [data-theme="dark"] .toggler-icon {
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='currentColor' viewBox='0 0 24 24' %3E%3Cpath d='M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z' /%3E%3C/svg%3E");
+  }
+</style>
+
+<script>
+  const localStorageTheme = localStorage.getItem("theme");
+  const systemSettingDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const systemSettingTheme = systemSettingDark.matches ? "dark" : "light";
+
+  let currentTheme = localStorageTheme ? localStorageTheme : systemSettingTheme;
+
+  const buttonToggler = document.querySelector("[data-theme-toggle]");
+  const html = document.querySelector("html");
+
+  html.setAttribute("data-theme", currentTheme);
+
+  setTimeout(() => {
+    document.querySelector("body").style.transition =
+      "background-color 1s ease-out, color 1s ease-out";
+  }, 0);
+
+  buttonToggler.addEventListener("click", () => {
+    const newTheme = currentTheme === "dark" ? "light" : "dark";
+    html.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme);
+    currentTheme = newTheme;
+  });
+</script>
+
+</header>
+
+    <style>
+      .main-container {
+        margin: 0 auto;
+        max-width: var(--container-max-size);
+        padding: 0 var(--container-padding-sides) var(--space-4);
+      }
+    </style>
+    <main class="main-container" id="skip">
+      <div class="main-sections">
+  <section>
+  <blockquote>
+    A space to reflect and make sense of what I'm learning. 
+  </blockquote>
+  </section>
+  <section>
+    <h2>Latest</h2>
+    
+    
+    
+<ul>
+  
+  
+  <li class="article">
+    <a href="/sample-article/">
+      <h3 class="article-title">Sample article</h3>
+      
+      <div class="article-time">
+        <time datetime="Thu Jan 23 2025 19:36:02 GMT+0000 (Coordinated Universal Time)">
+          Thu, Jan 23, 2025
+        </time>
+      </div>
+      <p class="article-description">This is another sample article. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi diam, sagittis quis commodo eu</p>
+    </a>
+  </li>
+  
+</ul>
+
+<style>
+  .article {
+    padding: var(--space-2) 0;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  .article a {
+    text-decoration: unset;
+  }
+  .article + .article {
+    margin-top: var(--space-4);
+  }
+  .article-title {
+    transition: color 0.2s ease-in-out;
+  }
+  .article:hover .article-title {
+    color: var(--color-primary);
+  }
+  .article-description {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-shade);
+  }
+  .article-time {
+    color: var(--color-text-shade);
+    font-size: var(--font-size-xs);
+  }
+</style>
+
+  </section>
+
+   
+  <section>
+    <h2>Topics</h2><a href="/tags/software">software(2)</a></section>
+  
+
+
+
+  <section>
+    <h2>More writing</h2>
+    
+    
+    
+    
+<ul>
+  
+  
+  <li class="article">
+    <a href="/markdown-test/">
+      <h3 class="article-title">Markdown test page</h3>
+      
+      <div class="article-time">
+        <time datetime="Thu Jan 23 2025 19:36:02 GMT+0000 (Coordinated Universal Time)">
+          Thu, Jan 23, 2025
+        </time>
+      </div>
+      <p class="article-description">This article is a sample of everything you can create using markdown syntax.</p>
+    </a>
+  </li>
+  
+</ul>
+
+<style>
+  .article {
+    padding: var(--space-2) 0;
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+  }
+  .article a {
+    text-decoration: unset;
+  }
+  .article + .article {
+    margin-top: var(--space-4);
+  }
+  .article-title {
+    transition: color 0.2s ease-in-out;
+  }
+  .article:hover .article-title {
+    color: var(--color-primary);
+  }
+  .article-description {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-shade);
+  }
+  .article-time {
+    color: var(--color-text-shade);
+    font-size: var(--font-size-xs);
+  }
+</style>
+
+    <a class="articles-link" href="/articles">All writing</a>
+  </section>
+ 
+  <section>
+  <h2> Connect with me </h2>
+  <div>
+    <a href="https://github.com/nnpereira" "target="_blank" rel="noopener noreferrer">Github</a> |
+    <a href="https://www.linkedin.com/in/niha-pereira/" "target="_blank" rel="noopener noreferrer">Linkedin</a> |
+    <a href="https://bsky.app/profile/nnpereira.bsky.social" "target="_blank" rel="noopener noreferrer">Bluesky</a>
+  </div>
+</section></div>
+
+<style>
+  .main-sections {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-7);
+  }
+  .articles-link {
+    display: block;
+    margin-top: var(--space-4);
+  }
+
+
+</style>
+
+    </main>
+    <style>
+  .footer {
+    max-width: var(--container-max-size);
+    padding: var(--space-7) var(--container-padding-sides);
+    margin: var(--space-6) auto 8rem auto;
+    
+  }
+  .footer a {
+    text-decoration: none;
+    color: unset;
+  }
+  .footer a:hover {
+    color: var(--color-primary);
+    transition: color 0.2s ease-in-out;
+  }
+  .footer-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-6);
+    row-gap: var(--space-4);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+    
+  }
+  .link-home {
+    font-weight: bold;
+    color: var(--color-primary);
+    font-size: var(--font-size-lg);
+  }
+</style>
+
+<footer class="footer">
+  <nav>
+    <ul class="footer-links">
+      <li>
+        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/nnpereira" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+      </li>
+    </ul>
+  </nav>
+</footer>
+
+  </body>
+</html>
