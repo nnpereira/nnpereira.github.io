@@ -384,23 +384,38 @@ Go <a href="/">home</a>
     flex-wrap: wrap;
     font-size: var(--font-size-xs);
     justify-content: center;
-    
   }
   .link-home {
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
+    .social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    row-gap: var(--space-2);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+  }
 </style>
 
 <footer class="footer">
+  <div class="social-links">
+    <a href="https://github.com/nnpereira" "target="_blank" rel="noopener noreferrer">Github</a> |
+    <a href="https://www.linkedin.com/in/niha-pereira/" "target="_blank" rel="noopener noreferrer">Linkedin</a> |
+    <a href="https://bsky.app/profile/nnpereira.bsky.social" "target="_blank" rel="noopener noreferrer">Bluesky</a>
+  </div>
   <nav>
     <ul class="footer-links">
       <li>
-        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/nnpereira" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/codingpotions/nulite" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
       </li>
     </ul>
   </nav>
+  
 </footer>
 
   </body>

@@ -367,24 +367,11 @@
       <h3 class="article-title">Sample article</h3>
       
       <div class="article-time">
-        <time datetime="Thu Jan 23 2025 19:56:15 GMT+0000 (Coordinated Universal Time)">
+        <time datetime="Thu Jan 23 2025 21:36:30 GMT+0000 (Coordinated Universal Time)">
           Thu, Jan 23, 2025
         </time>
       </div>
       <p class="article-description">This is another sample article. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi diam, sagittis quis commodo eu</p>
-    </a>
-  </li>
-  
-  <li class="article">
-    <a href="/markdown-test/">
-      <h3 class="article-title">Markdown test page</h3>
-      
-      <div class="article-time">
-        <time datetime="Thu Jan 23 2025 19:56:15 GMT+0000 (Coordinated Universal Time)">
-          Thu, Jan 23, 2025
-        </time>
-      </div>
-      <p class="article-description">This article is a sample of everything you can create using markdown syntax.</p>
     </a>
   </li>
   
@@ -446,23 +433,38 @@
     flex-wrap: wrap;
     font-size: var(--font-size-xs);
     justify-content: center;
-    
   }
   .link-home {
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
+    .social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    row-gap: var(--space-2);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+  }
 </style>
 
 <footer class="footer">
+  <div class="social-links">
+    <a href="https://github.com/nnpereira" "target="_blank" rel="noopener noreferrer">Github</a> |
+    <a href="https://www.linkedin.com/in/niha-pereira/" "target="_blank" rel="noopener noreferrer">Linkedin</a> |
+    <a href="https://bsky.app/profile/nnpereira.bsky.social" "target="_blank" rel="noopener noreferrer">Bluesky</a>
+  </div>
   <nav>
     <ul class="footer-links">
       <li>
-        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/nnpereira" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/codingpotions/nulite" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
       </li>
     </ul>
   </nav>
+  
 </footer>
 
   </body>

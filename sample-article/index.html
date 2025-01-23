@@ -382,19 +382,6 @@
   <ul class="related-posts">
     
     <li>
-      <a class="related-article" href="/markdown-test/">
-        <h3 class="related-article-title">Markdown test page</h3>
-        <p class="related-article-description">
-          Whenever I buy things I try to prioritize cost per use. Sometimes I
-          consider other priorities such as cost per smile, cost per thrill,
-          cost per externality, and cost per lesson. Cost per use Cost per use
-          is a heuristic that helps me make decisions about most non-perishable
-          purchases such... Keep&nbsp;reading&nbsp;→
-        </p>
-      </a>
-    </li>
-    
-    <li>
       <a class="related-article" href="/about/">
         <h3 class="related-article-title">About me</h3>
         <p class="related-article-description">
@@ -667,6 +654,7 @@
   }
 </style>
 
+ 
 
 <style>
   .post-header {
@@ -800,23 +788,38 @@
     flex-wrap: wrap;
     font-size: var(--font-size-xs);
     justify-content: center;
-    
   }
   .link-home {
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
+    .social-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    row-gap: var(--space-2);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    justify-content: center;
+  }
 </style>
 
 <footer class="footer">
+  <div class="social-links">
+    <a href="https://github.com/nnpereira" "target="_blank" rel="noopener noreferrer">Github</a> |
+    <a href="https://www.linkedin.com/in/niha-pereira/" "target="_blank" rel="noopener noreferrer">Linkedin</a> |
+    <a href="https://bsky.app/profile/nnpereira.bsky.social" "target="_blank" rel="noopener noreferrer">Bluesky</a>
+  </div>
   <nav>
     <ul class="footer-links">
       <li>
-        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/nnpereira" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+        <div>© Copyright 2025 Niha Pereira. Powered by Eleventy using the <a href="https://github.com/codingpotions/nulite" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
       </li>
     </ul>
   </nav>
+  
 </footer>
 
   </body>
