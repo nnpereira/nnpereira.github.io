@@ -5,16 +5,16 @@
   <link href="rss.xml" rel="self" />
   <link href="nnpereira.github.io" />
   <updated>
-    2025-01-23T22:40:24Z
+    2025-01-27T20:03:07Z
   </updated>
   <id>nnpereira.github.io</id>
   <author>
     <name>Niha Pereira</name>
   </author>
   <entry>
-    <title>Sample article</title>
+    <title>Construct validity</title>
     <link href="/sample-article/" />
-    <updated>2025-01-23T22:40:24Z</updated>
+    <updated>2025-01-27T20:03:07Z</updated>
     <id>/sample-article/</id>
     <content xml:lang="" type="html">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas placerat sapien eget facilisis. Vestibulum nisi diam, sagittis quis commodo eu, rhoncus et velit. Etiam et tellus interdum, varius ligula id, consectetur magna. Maecenas non orci nec elit viverra porta. Mauris condimentum arcu id orci tristique porttitor. Proin tincidunt ornare lacinia. Nunc facilisis, magna ut bibendum tristique, risus ligula pretium justo, vel consequat arcu ipsum ac nulla. Donec blandit rutrum lorem, mollis varius augue scelerisque at. Vivamus eget facilisis quam, id aliquam arcu.</p>
@@ -28,10 +28,11 @@
   <entry>
     <title>About me</title>
     <link href="/about/" />
-    <updated>2025-01-23T22:40:24Z</updated>
+    <updated>2025-01-27T20:03:07Z</updated>
     <id>/about/</id>
     <content xml:lang="" type="html">
-      <p>Hi, I'm Niha. I've spent the majority of my career working as a data consultant in the social impact space. I love to learn and hope I can use this space to discuss things related to <a href="/tags/data/">data</a>, <a href="(/tags/llm/)">LLM's</a>, <a href="/tags/ai/">Responsible AI</a>, and more.</p>
+      <p>Hi, I'm Niha. I've spent the majority of my career working as a data consultant in the social impact space. I love to learn and hope I can use this space to discuss things related to <a href="/tags/data/">Data</a>, <a href="/tags/responsible-ai/">Responsible AI</a>, and more.</p>
+<p>Feel free to connect with me on <a href="https://www.linkedin.com/in/niha-pereira/">Linkedin</a>, <a href="https://github.com/nnpereira">Github</a>, or <a href="https://bsky.app/profile/nnpereira.bsky.social">BlueSky</a>.</p>
 
     </content>
   </entry>
