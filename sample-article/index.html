@@ -164,9 +164,9 @@
     background-color: var(--color-background);
     font-size: 1rem;
     font-size: var(--font-size-base);
-    //background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
-    //background-size: 16px 16px;
-    text-rendering: optimizeLegibility;\
+    /* //background-image: radial-gradient(#e5e7eb 1px, transparent 1px);
+    //background-size: 16px 16px; */
+    text-rendering: optimizeLegibility;
   }
   a {
     color: var(--color-primary);
@@ -349,6 +349,7 @@
 
     <style>
       .main-container {
+        min-height: calc(100vh - var(--navbar-height));;
         margin: 0 auto;
         max-width: var(--container-max-size);
         padding: 0 var(--container-padding-sides) var(--space-4);
@@ -389,7 +390,7 @@
   }
   .post-container {
     padding-bottom: var(--space-8);
-    border-bottom: 1px solid var(--color-text-shade);
+    
   }
   .post-container h2 {
     margin-top: var(--space-7);
@@ -489,7 +490,6 @@
     max-width: var(--container-max-size);
     padding: var(--space-7) var(--container-padding-sides);
     margin: var(--space-6) auto 8rem auto;
-    
   }
   .footer a {
     text-decoration: none;
@@ -505,25 +505,14 @@
     align-items: center;
     gap: var(--space-6);
     row-gap: var(--space-4);
-    flex-wrap: wrap;
     font-size: var(--font-size-xs);
-    justify-content: center;
   }
   .link-home {
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
-    .social-links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: var(--space-2);
-    row-gap: var(--space-2);
-    flex-wrap: wrap;
-    font-size: var(--font-size-xs);
-    justify-content: center;
-  }
+
 </style>
 
 <footer class="footer">
@@ -534,7 +523,7 @@
       </li>
     </ul>
   </nav>
-  
+
 </footer>
 
   </body>
