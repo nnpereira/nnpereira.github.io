@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     
-      <title>bap</title>
-      <meta name="twitter:title" content="bap">
-      <meta property="og:title" content="bap">
+      <title>hello</title>
+      <meta name="twitter:title" content="hello">
+      <meta property="og:title" content="hello">
      
 
     
@@ -165,6 +165,10 @@
     font-size: 1rem;
     font-size: var(--font-size-base);
     text-rendering: optimizeLegibility;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
   }
   a {
     color: var(--color-primary);
@@ -237,13 +241,16 @@
     <a href="#skip" class="visually-hidden">Skip to main content</a>
     <style>
   .navbar {
+    width: 100%; 
     max-width: var(--container-max-size);
     padding: var(--space-7) var(--container-padding-sides);
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: var(--space-4);
+    flex-shrink: 0;  
   }
+  
   .navbar nav {
     flex: 1;
   }
@@ -351,12 +358,14 @@
         margin: 0 auto;
         max-width: var(--container-max-size);
         padding: 0 var(--container-padding-sides) var(--space-4);
+        flex: 1;
+        width: 100%;
       }
     </style>
     <main class="main-container" id="skip">
       
 <header class="post-header">
-  <h1 class="post-title">bap</h1>
+  <h1 class="post-title">hello</h1>
   
   <div class="post-time">
     <time datetime=" ">
@@ -367,10 +376,12 @@
 </header>
 
 <section class="post-container">
-  
+  <p>Test content</p>
+
 </section>
 
 <style>
+  
   .post-header {
     margin-bottom: var(--space-5);
   }
@@ -383,7 +394,6 @@
   }
   .post-container {
     padding-bottom: var(--space-8);
-    
   }
   .post-container h2 {
     margin-top: var(--space-7);
@@ -482,7 +492,8 @@
   .footer {
     max-width: var(--container-max-size);
     padding: var(--space-7) var(--container-padding-sides);
-    margin: var(--space-6) auto 8rem auto;
+    margin: 0 auto;
+    width: 100%;
   }
   .footer a {
     text-decoration: none;
@@ -517,7 +528,6 @@
       </li>
     </ul>
   </nav>
-
 </footer>
 
   </body>

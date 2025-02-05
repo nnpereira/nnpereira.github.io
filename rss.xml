@@ -5,7 +5,7 @@
   <link href="rss.xml" rel="self" />
   <link href="nnpereira.github.io" />
   <updated>
-    2025-02-05T09:31:22Z
+    2025-02-05T09:55:13Z
   </updated>
   <id>nnpereira.github.io</id>
   <author>
@@ -14,7 +14,7 @@
   <entry>
     <title>About me</title>
     <link href="/about/" />
-    <updated>2025-02-05T09:31:22Z</updated>
+    <updated>2025-02-05T09:55:13Z</updated>
     <id>/about/</id>
     <content xml:lang="" type="html">
       <p>Hi, I'm Niha. I've spent the majority of my career working as a data consultant in the social impact space. I love to learn and hope I can use this space to discuss things related to <a href="/tags/data/">Data</a>, <a href="/tags/responsible-ai/">Responsible AI</a>, and more.</p>
@@ -28,7 +28,8 @@
     <updated>2025-01-31T00:00:00Z</updated>
     <id>/sample-article/</id>
     <content xml:lang="" type="html">
-      <p>Here's a simple footnote,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
+      <p>Test content.<br>
+Here's a simple footnote,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -40,12 +41,13 @@
     </content>
   </entry>
   <entry>
-    <title>bap</title>
+    <title>hello</title>
     <link href="/hello/" />
     <updated>2025-01-20T00:00:00Z</updated>
     <id>/hello/</id>
     <content xml:lang="" type="html">
-      
+      <p>Test content</p>
+
     </content>
   </entry>
 </feed>
