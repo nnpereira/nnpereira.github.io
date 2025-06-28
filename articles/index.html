@@ -95,7 +95,7 @@
   --color-background-shade: #FBF7F1;
   --color-text: #2D2A25;
   --color-text-shade: #575650;
-  --color-primary: #446590;
+  --color-primary: #656565;
 
   
   /* Shadow colors */
@@ -118,6 +118,7 @@
     --space-9: 5rem;
     --space-10: 6rem;
 
+    --font-size-xxs: clamp(0.6rem, 0.10vw + 0.6rem, .75rem);
     --font-size-xs: clamp(0.8rem, 0.12vw + 0.8rem, 1rem);
     --font-size-base: clamp(0.9rem, 0.16vw + 0.9rem, 1.25rem);
     --font-size-lg: clamp(1.2rem, 0.12vw + 1.2rem, 1.6rem);
@@ -140,6 +141,8 @@
   }
   h1 {
     font-size: var(--font-size-xl);
+    font-weight: 700;
+    font-style: ;
   }
   h2 {
     font-size: var(--font-size-lg);
@@ -147,17 +150,20 @@
     font-weight: normal;
     margin-bottom: var(--space-2);
   }
+
   h3 {
 
-    font-weight: 200;
+    font-size: var(--font-size-base);
   }
 
-  h3,
+  
   h4,
   h5,
   h6 {
-    font-size: var(--font-size-base);
+    font-size: var(--font-size-xs);
   }
+
+
   body {
     font-family: var(--font-family);
     color: var(--color-text);
@@ -256,7 +262,7 @@
   }
   .navbar a {
     text-decoration: none;
-    color: var(--color-primary);
+    color: var(--color-text);
   }
   .navbar a:hover {
     color: var(--color-primary);
@@ -290,11 +296,9 @@
 <header class="navbar">
   <nav>
     <ul class="navbar-links">
-      <li class="link-home">
-        <a href="/">Niha Pereira</a>
+      <li>
+        <a href="/">NIHA PEREIRA</a>
       </li>
-        <a href="/about">About</a>
-        <a href="/articles">Writing</a>
     </ul>
   </nav>
      <button class="dark-toggler" aria-label="Toggle color mode" title="Toggle color mode" data-theme-toggle>
@@ -363,7 +367,7 @@
       }
     </style>
     <main class="main-container" id="skip">
-      <h2>Writing</h2>
+      <h4>ALL POSTS</h4>
 
 
 
@@ -371,28 +375,15 @@
   
   
   <li class="article">
-    <a href="/sample-article/">
-      <h3 class="article-title">Construct validity</h3>
+    <a href="/sample/">
+      <h3 class="article-title">Test post</h3>
       
       <div class="article-time">
-        <time datetime="Fri Jan 31 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-          January 31, 2025
+        <time datetime="Wed May 28 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
+          May 28, 2025
         </time>
       </div>
-      <p class="article-description">This is another sample article. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi diam, sagittis quis commodo eu</p>
-    </a>
-  </li>
-  
-  <li class="article">
-    <a href="/hello/">
-      <h3 class="article-title">hello</h3>
-      
-      <div class="article-time">
-        <time datetime="Mon Jan 20 2025 00:00:00 GMT+0000 (Coordinated Universal Time)">
-          January 20, 2025
-        </time>
-      </div>
-      <p class="article-description">This is another sample article. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nisi diam, sagittis quis commodo eu</p>
+      <p class="article-description">Lorem ipsum</p>
     </a>
   </li>
   
@@ -440,19 +431,19 @@
   }
   .footer a {
     text-decoration: none;
-    color: unset;
+    color: var(--color-primary);
   }
-  .footer a:hover {
+  /* .footer a:hover {
     color: var(--color-primary);
     transition: color 0.2s ease-in-out;
-  }
+  } */
   .footer-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: var(--space-6);
     row-gap: var(--space-4);
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-xxs);
     
   }
   .link-home {

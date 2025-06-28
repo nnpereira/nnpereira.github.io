@@ -5,50 +5,19 @@
   <link href="rss.xml" rel="self" />
   <link href="nnpereira.github.io" />
   <updated>
-    2025-02-05T16:28:41Z
+    2025-05-28T00:00:00Z
   </updated>
   <id>nnpereira.github.io</id>
   <author>
     <name>Niha Pereira</name>
   </author>
   <entry>
-    <title>About me</title>
-    <link href="/about/" />
-    <updated>2025-02-05T16:28:41Z</updated>
-    <id>/about/</id>
+    <title>Test post</title>
+    <link href="/sample/" />
+    <updated>2025-05-28T00:00:00Z</updated>
+    <id>/sample/</id>
     <content xml:lang="" type="html">
-      <h2>Hi, I'm Niha. I'm a data consultant based in Houston, TX.</h2>
-<p>I've spent the majority of my career helping organizations in the social impact space get more out of their data. I use this website to share reflections on my work and what I'm learning.</p>
-<p>On a given day you might find me tinkering with code, reading about AI fairness research, or petting my rescue dog.</p>
-<p>Feel free to connect with me on <a href="https://www.linkedin.com/in/niha-pereira/">Linkedin</a>, <a href="https://github.com/nnpereira">Github</a>, or <a href="https://bsky.app/profile/nnpereira.bsky.social">BlueSky</a>.</p>
-
-    </content>
-  </entry>
-  <entry>
-    <title>Construct validity</title>
-    <link href="/sample-article/" />
-    <updated>2025-01-31T00:00:00Z</updated>
-    <id>/sample-article/</id>
-    <content xml:lang="" type="html">
-      <p>Test content.<br>
-Here's a simple footnote,<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>.</p>
-<hr class="footnotes-sep">
-<section class="footnotes">
-<ol class="footnotes-list">
-<li id="fn1" class="footnote-item"><p>This is the first footnote. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
-</li>
-</ol>
-</section>
-
-    </content>
-  </entry>
-  <entry>
-    <title>hello</title>
-    <link href="/hello/" />
-    <updated>2025-01-20T00:00:00Z</updated>
-    <id>/hello/</id>
-    <content xml:lang="" type="html">
-      <p>Test content</p>
+      <p>Lorem ipsum</p>
 
     </content>
   </entry>
