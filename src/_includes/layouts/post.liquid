@@ -4,41 +4,21 @@ layout: layouts/default.liquid
 
 <header class="post-header">
   <h1 class="post-title">{{ title }}</h1>
+  {%if tags%}
   <div class="post-time">
-    <time datetime="{{ post.date }}">
-      {{ page.date | date : "%a, %b %d, %Y" }}
+    <time datetime="{{ post.date}} ">
+      {{ dateString }}
     </time>
   </div>
+  {%endif%}
 </header>
 
 <section class="post-container">
   {{ content }}
 </section>
 
-{% assign similar = collections.posts | similarPosts: page.inputPath, tags %} {%
-if similar.length > 0 %}
-<section class="related">
-  <h2 class="related-title">You might also enjoy</h2>
-  <ul class="related-posts">
-    {% for post in similar limit: 2 %}
-    <li>
-      <a class="related-article" href="{{ post.url }}">
-        <h3 class="related-article-title">{{ post.data.title }}</h3>
-        <p class="related-article-description">
-          Whenever I buy things I try to prioritize cost per use. Sometimes I
-          consider other priorities such as cost per smile, cost per thrill,
-          cost per externality, and cost per lesson. Cost per use Cost per use
-          is a heuristic that helps me make decisions about most non-perishable
-          purchases such... Keep&nbsp;reading&nbsp;→
-        </p>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
-{% endif %} {% include "css/prism.liquid" %}
-
 <style>
+  
   .post-header {
     margin-bottom: var(--space-5);
   }
@@ -51,7 +31,6 @@ if similar.length > 0 %}
   }
   .post-container {
     padding-bottom: var(--space-8);
-    border-bottom: 1px solid var(--color-text-shade);
   }
   .post-container h2 {
     margin-top: var(--space-7);

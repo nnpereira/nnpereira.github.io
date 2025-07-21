@@ -1,18 +1,21 @@
 <style>
   .navbar {
+    width: 100%; 
     max-width: var(--container-max-size);
     padding: var(--space-7) var(--container-padding-sides);
     margin: 0 auto;
     display: flex;
     align-items: center;
     gap: var(--space-4);
+    flex-shrink: 0;  
   }
+  
   .navbar nav {
     flex: 1;
   }
   .navbar a {
     text-decoration: none;
-    color: unset;
+    color: var(--color-text);
   }
   .navbar a:hover {
     color: var(--color-primary);
@@ -30,7 +33,6 @@
     margin-left: auto;
   }
   .link-home {
-    font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
@@ -47,13 +49,10 @@
 <header class="navbar">
   <nav>
     <ul class="navbar-links">
-      <li class="link-home">
-        <a href="/">{{ site.shortTitle }}</a>
+      <li >
+        <a href="/">NIHA PEREIRA</a>
       </li>
-      <li><a href="/articles">Articles</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/rss.xml">RSS</a></li>
     </ul>
   </nav>
-  {% include "dark-toggler.liquid" %}
+     {% include "dark-toggler.liquid" %}
 </header>

@@ -2,37 +2,40 @@
   .footer {
     max-width: var(--container-max-size);
     padding: var(--space-7) var(--container-padding-sides);
-    margin: var(--space-6) auto 8rem auto;
+    margin: 0 auto;
+    width: 100%;
   }
   .footer a {
     text-decoration: none;
-    color: unset;
+    color: var(--color-primary);
   }
-  .footer a:hover {
+  /* .footer a:hover {
     color: var(--color-primary);
     transition: color 0.2s ease-in-out;
-  }
+  } */
   .footer-links {
     list-style: none;
     display: flex;
     align-items: center;
     gap: var(--space-6);
     row-gap: var(--space-4);
-    flex-wrap: wrap;
+    font-size: var(--font-size-xxs);
+    
   }
   .link-home {
     font-weight: bold;
     color: var(--color-primary);
     font-size: var(--font-size-lg);
   }
+
 </style>
 
 <footer class="footer">
   <nav>
     <ul class="footer-links">
-      <li><a href="/articles">Articles</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/rss">RSS</a></li>
+      <li>
+        <div>© Copyright 2025 Niha Pereira. Made with <a href="https://www.11ty.dev/" target="_blank" rel="noopener noreferrer"> Eleventy</a>. Based on the <a href="https://github.com/codingpotions/nulite" target="_blank" rel="noopener noreferrer">Nulite theme</a>.</div>
+      </li>
     </ul>
   </nav>
 </footer>

@@ -2,16 +2,36 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const codeStyleHooks = require("eleventy-plugin-code-style-hooks");
 
 module.exports = function (eleventyConfig) {
+  // set markdown footnote processor
+  let markdownIt = require("markdown-it");
+  let markdownItFootnote = require("markdown-it-footnote");
+  
+  let options = {
+    html: true, // Enable HTML tags in source
+    breaks: true,  // Convert '\n' in paragraphs into <br>
+    linkify: true // Autoconvert URL-like text to links
+  };
+  
+  // configure the library with options
+  let markdownLib =  markdownIt(options).use(markdownItFootnote);
+  // set the library to process markdown files
+  eleventyConfig.setLibrary("md", markdownLib);
   // Copy the contents of the `public` folder to the output folder
   // For example, `./public/css/` ends up in `_site/css/`
   eleventyConfig.addPassthroughCopy({
     "./public/": "/",
+    
   });
 
   eleventyConfig.addPlugin(codeStyleHooks, {
-    lineNumbers: false,
+    lineNumbers: false, 
   });
 
+  eleventyConfig.addFilter('postDate', (dateObj) => {
+    const date =  new Date(dateObj).toUTCString()
+    return date
+  })
+  
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addLiquidFilter("dateToRfc3339", pluginRss.dateToRfc3339);
   eleventyConfig.addLiquidFilter(
@@ -89,7 +109,7 @@ module.exports = function (eleventyConfig) {
     // When paired with the HTML <base> plugin https://www.11ty.dev/docs/plugins/html-base/
     // it will transform any absolute URLs in your HTML to include this
     // folder name and does **not** affect where things go in the output folder.
-    pathPrefix: "/",
+    pathPrefix: "",
   };
 };
 
@@ -109,3 +129,4 @@ const getUniquePosts = function (posts) {
     return false;
   });
 };
+

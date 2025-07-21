@@ -1,14 +1,17 @@
+
 <ul>
-  {% for post in posts limit: count offset: offset %}
+  {% assign tagged_posts = posts | where_exp: "post", "post.data.tags != nil" %}
+  {% for post in tagged_posts limit: count offset: offset %}
   <li class="article">
     <a href="{{ post.url }}">
       <h3 class="article-title">{{ post.data.title }}</h3>
+      
       <div class="article-time">
         <time datetime="{{ post.date }}">
-          {{ post.date | date : "%a, %b %d, %Y" }}
+          {{ post.data.dateString }}
         </time>
       </div>
-      <p class="article-description">{{ post.data.description }}</p>
+      {% comment %} <p class="article-description">{{ post.data.description }}</p> {% endcomment %}
     </a>
   </li>
   {% endfor %}
@@ -30,6 +33,7 @@
   }
   .article-title {
     transition: color 0.2s ease-in-out;
+    font-weight: 800;
   }
   .article:hover .article-title {
     color: var(--color-primary);

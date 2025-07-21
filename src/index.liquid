@@ -1,42 +1,55 @@
 ---
 layout: layouts/default.liquid
 ---
-
 <div class="main-sections">
+  
   <section>
-    <h2>Latest</h2>
+    <h1> Hi, I'm Niha — writer, visual thinker, and data analyst.</h1>
+    <h2> I share what I'm reading and learning about here.</h2>
+  </section>
+  <section>
+    <h5>POSTS</h5>
     {% assign posts = collections.posts %}
-    {% assign count = 1 %}
+    {% assign count = 3 %}
     {% include "postlist.liquid" %}
+    {% if posts.size > 3 %}
+      <a style="text-decoration: none;" href="/articles">more...</a> 
+    {% endif %} 
   </section>
 
   {% assign tagList = collections | postTags %} {% if tagList.length > 0 %}
   <section>
-    <h2>Topics</h2>
+    <h5>TOPICS</h5>
     {%- for tag in tagList -%}
     <a href="/tags/{{ tag.name }}">{{ tag.name }}({{ tag.count }})</a>{% if
     forloop.last != true %}<span>, </span>{% endif %} {%- endfor -%}
   </section>
   {% endif %}
 
-  <section>
-    <h2>More articles</h2>
-    {% assign posts = collections.posts %}
-    {% assign count = 5 %}
-    {% assign offset = 1 %}
-    {% include "postlist.liquid" %}
-    <a class="articles-link" href="/articles">All the articles</a>
-  </section>
+
+{% assign tagged_posts = posts | where_exp: "post", "post.data.tags != nil" %}
+
 </div>
+
 
 <style>
   .main-sections {
     display: flex;
     flex-direction: column;
     gap: var(--space-7);
+    width: 100%;
   }
   .articles-link {
     display: block;
     margin-top: var(--space-4);
   }
+
+  blockquote {
+    font-size: var(--font-size-lg); 
+  }
+
+  .underline {
+    text-decoration: underline;
+  }
+  
 </style>
